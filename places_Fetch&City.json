@@ -1,0 +1,82 @@
+[
+  {
+    "title": "LITANIA BEZSILNEGO, Świnoujście",
+    "city": "Świnoujście",
+    "top": "30.2%",
+    "left": "23.1%",
+    "labelOffsetY": "4px",
+    "url": "https://www.dwutygodnik.com/artykul/11976-litania-bezsilnego.html"
+  },
+  {
+    "title": "DOPUSZCZAĆ WSZYSTKICH DO GŁOSU, Słupsk",
+    "city": "Słupsk",
+    "top": "24.7%",
+    "left": "36.4%",
+    "labelOffsetY": "4px",
+    "url": "https://www.dwutygodnik.com/artykul/12054-dopuszczac-wszystkich-do-glosu.html"
+  },
+  {
+    "title": "SPOŁEM FEST, Białystok",
+    "city": "Białystok",
+    "top": "38.3%",
+    "left": "65.9%",
+    "labelOffsetY": "4px",
+    "url": "https://www.dwutygodnik.com/artykul/12121-mapa-sztuki-1-spolem-fest-bialystok.html"
+  },
+  {
+    "title": "WIDOK CUDZEGO ŻYCIA, Częstochowa",
+    "city": "Częstochowa",
+    "top": "61.0%",
+    "left": "46.1%",
+    "labelOffsetY": "4px",
+    "url": "https://www.dwutygodnik.com/artykul/12019-widok-cudzego-zycia.html"
+  },
+  {
+    "title": "WITAMY W STOLICY POLSKIEJ PIOSENKI, Opole",
+    "city": "Opole",
+    "top": "62.9%",
+    "left": "41.1%",
+    "labelOffsetY": "4px",
+    "url": "https://www.dwutygodnik.com/artykul/12027-witamy-w-stolicy-polskiej-piosenki.html"
+  },
+  {
+    "title": "OSTROWCE, Ostrowiec Świętokrzyski",
+    "city": "Ostrowiec<br>Świętokrzyski",
+    "top": "58.7%",
+    "left": "57.7%",
+    "labelOffsetY": "0px",
+    "url": "https://www.dwutygodnik.com/artykul/12130-ostrowce.html"
+  },
+  {
+    "title": "PAUZA, Przemyśl",
+    "city": "Przemyśl",
+    "top": "70.2%",
+    "left": "63.7%",
+    "labelOffsetY": "4px",
+    "url": "https://www.dwutygodnik.com/artykul/12165-pauza.html"
+  },
+  {
+    "title": "???, Krosno",
+    "city": "Krosno",
+    "top": "71.7%",
+    "left": "55.2%",
+    "labelOffsetY": "4px",
+    "url": "https://pl.wikipedia.org/wiki/Krosno"
+  },
+  {
+    "title": "???, Lusławice",
+    "city": "Lusławice",
+    "top": "69.7%",
+    "left": "55.2%",
+    "labelOffsetY": "-11px",
+    "url": "https://pl.wikipedia.org/wiki/Lusławice_(województwo_małopolskie)"
+  },
+  {
+    "title": "???, Bytom",
+    "city": "Bytom",
+    "top": "66.2%",
+    "left": "44.9%",
+    "labelOffsetY": "4px",
+    "url": "https://pl.wikipedia.org/wiki/Bytom"
+  }
+]
