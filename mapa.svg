@@ -7,7 +7,7 @@
 
     <symbol id="szpilka" overflow="visible">
       <!-- Ustawienie x,y tak, aby czubek szpilki był punktem odniesienia (0,0) -->
-      <image href="szpilka.png" x="-16" y="-32" width="32" height="32"/>
+      <image href="szpilka_do_SVG.png" x="-16" y="-32" width="32" height="32"/>
     </symbol>
 
 
