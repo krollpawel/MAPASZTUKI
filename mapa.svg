@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+      <svg xmlns="http://www.w3.org/2000/svg"
+           xmlns:xlink="http://www.w3.org/1999/xlink"
+           viewBox="0 0 1107 899">
+        
+      <defs>
+
+    <symbol id="szpilka" overflow="visible">
+      <!-- Ustawienie x,y tak, aby czubek szpilki był punktem odniesienia (0,0) -->
+      <image href="szpilka.png" x="-16" y="-32" width="32" height="32"/>
+    </symbol>
+
+
+        <style type="text/css">
+      <![CDATA[
+        a text { cursor: pointer; }
+        .pin { transform: translate(-8,-8); }
+        .label { font-family: 'Great Vibes', cursive; fill: #4a276a; }
+      ]]>
+    </style>
+      </defs>
+    
+        
+      <image href="MAPASZTUKIPrzyklad_do_SVG.png" x="0" y="0" width="1107" height="899"/>
+    
+        <a xlink:href="https://www.dwutygodnik.com/artykul/11976-litania-bezsilnego.html" target="_top">
+          <g transform="translate(290,306)">
+          <use href="#szpilka"/>
+        </g>
+          <text class="label" x="300" y="311" font-size="16">Świnoujście</text>
+        </a>
+      
+        <a xlink:href="https://www.dwutygodnik.com/artykul/12054-dopuszczac-wszystkich-do-glosu.html" target="_top">
+          <g transform="translate(418,260)">
+          <use href="#szpilka"/>
+        </g>
+          <text class="label" x="428" y="265" font-size="16">Słupsk</text>
+        </a>
+      
+        <a xlink:href="https://www.dwutygodnik.com/artykul/12121-mapa-sztuki-1-spolem-fest-bialystok.html" target="_top">
+          <g transform="translate(744,359)">
+          <use href="#szpilka"/>
+        </g>
+          <text class="label" x="668" y="364" font-size="16">Białystok</text>
+        </a>
+      
+        <a xlink:href="https://www.dwutygodnik.com/artykul/12019-widok-cudzego-zycia.html" target="_top">
+          <g transform="translate(534,574)">
+          <use href="#szpilka"/>
+        </g>
+          <text class="label" x="544" y="578" font-size="16">Częstochowa</text>
+        </a>
+      
+        <a xlink:href="https://www.dwutygodnik.com/artykul/12027-witamy-w-stolicy-polskiej-piosenki.html" target="_top">
+          <g transform="translate(479,588)">
+          <use href="#szpilka"/>
+        </g>
+          <text class="label" x="427" y="592" font-size="16">Opole</text>
+        </a>
+      
+        <a xlink:href="https://www.dwutygodnik.com/artykul/12130-ostrowce.html" target="_top">
+          <g transform="translate(663,554)">
+          <use href="#szpilka"/>
+        </g>
+          <text class="label" x="673" y="548" font-size="16">
+            <tspan x="673" dy="0">Ostrowiec</tspan>
+            <tspan x="673" dy="1.1em">Świętokrzyski</tspan>
+          </text>
+        </a>
+      
+        <a xlink:href="https://www.dwutygodnik.com/artykul/12165-pauza.html" target="_top">
+          <g transform="translate(726,655)">
+          <use href="#szpilka"/>
+        </g>
+          <text class="label" x="691" y="617" font-size="16">Przemyśl</text>
+        </a>
+      
+        <a xlink:href="https://pl.wikipedia.org/wiki/Krosno" target="_top">
+          <g transform="translate(671,667)">
+          <use href="#szpilka"/>
+        </g>
+          <text class="label" x="616" y="671" font-size="16">Krosno</text>
+        </a>
+      
+        <a xlink:href="https://pl.wikipedia.org/wiki/Lusławice_(województwo_małopolskie)" target="_top">
+          <g transform="translate(636,649)">
+          <use href="#szpilka"/>
+        </g>
+          <text class="label" x="560" y="653" font-size="16">Lusławice</text>
+        </a>
+      
+        <a xlink:href="https://pl.wikipedia.org/wiki/Bytom" target="_top">
+          <g transform="translate(521,618)">
+          <use href="#szpilka"/>
+        </g>
+          <text class="label" x="531" y="622" font-size="16">Bytom</text>
+        </a>
+      
+      </svg>
