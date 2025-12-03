@@ -16,6 +16,16 @@
         font-style: normal;
       }
 
+/* Wyłączenie zaznaczania tekstu w całym SVG (mobile long-press fix) */
+svg, svg * {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none; /* blokuje systemowe menu */
+}
+
+
       a text { cursor: pointer; }
 
       /* Ozdobna czcionka dla etykiet */
