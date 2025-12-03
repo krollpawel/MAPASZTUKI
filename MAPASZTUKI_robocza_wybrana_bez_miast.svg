@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 1107 899">
+
+  <defs>
+    <style><![CDATA[
+      /* Osadzona czcionka Great Vibes (Google Fonts – WOFF2 → Base64) */
+
+
+      @font-face {
+        font-family: "GreatVibes";
+        src: url("data:font/woff2;base64,d09GMgABAAAAAAWAAAwAAAAABlgAAAPCAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGmJkU0cAAAFgAAAAXAAAAGD0hE7EGG1hcAAAAcAAAABgAAAAYAB0AAAGGdseWYAAAH4AAAAHQAAAB0A4QCEhmhlYWQAAAC8AAAANgAAADYI5QnuGWhoZWEAAADIAAAAIAAAACAC+QACGhtdHgAAANkAAAADgAAAA4GHgAAbG1heAAAAvgAAAAgAAAAIAAQABhtbmFtZQAAAwQAAABeAAAAZgycWk9wb3N0AAADjAAAAA8AAAAgAAMAA2ltbnQAAAOwAAAAOgAAAEbn//9tdHJ5AAAD/AAAAGYAAAAoAAAABAAAAAQAAQAAAQAAAAAAAAEAAABkAAEAAAAAAAEAAQAAAZwAAgAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAwAAAAMAAAAcAAAAAwAAAB4AAAADAAAACgAAAADAAAAEgAAAAIAAAACAAAAAAEAAQAAAgAAAAAAAAA=")
+             format("woff2");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      a text { cursor: pointer; }
+
+      /* Ozdobna czcionka dla etykiet */
+      .label {
+        font-family: "GreatVibes", cursive;
+        fill: #ffffff;
+        font-size: 30px;
+      }
+
+      /* Animacja lekkiego przechyłu */
+      @keyframes wobble {
+        0%   { transform: rotate(-10deg); }
+        50%  { transform: rotate(10deg); }
+        100% { transform: rotate(-10deg); }
+      }
+
+      /* Animacja na hover wrappera city */
+      .city:hover .pin {
+        animation: wobble 0.6s ease-in-out infinite;
+        transform-origin: 0px 0px;
+      }
+
+
+
+    /* ---- DYMKI ---- */
+    /* domyślnie ukryte */
+    .tooltip { 
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.2s ease-in-out;
+    }
+
+    /* pojawiają się po hover na pinezce lub nazwie miasta */
+    .city:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    /* tekst w dymku */
+    .tooltip-text {
+      font-family: Arial, sans-serif;
+      font-size: 10px;
+      fill: #4a276a;
+    }
+
+
+
+
+
+    ]]></style>
+  </defs>
+
+  <!-- Tło mapy -->
+  <image href="dwutygodnik_mapa_3_4_550.jpg"
+         x="0" y="0" width="1107" height="899" />
+
+  <!-- ============================= -->
+  <!--      PUNKTY Z PNG + TEXT      -->
+  <!-- ============================= -->
+
+
+    <!-- CITY 0 – All boxes -->
+
+<g class="city" transform="translate(0,2)">
+  <!-- pin -->
+  <image href="Szpilka_MS_SVG.png" x="-16" y="-32" width="32" height="32" class="pin"/>
+  <!-- labelka miasta -->
+  <text class="label" x="10" y="5">Słupsk</text>
+
+  <!-- grupa tooltipów, domyślnie ukryta -->
+  <g class="tooltip-group" transform="translate(0,0)">
+  
+    <!-- BOX 1 – osobny link -->
+    <a xlink:href="https://www.dwutygodnik.com/artykul/11976-litania-bezsilnego.html" target="_top">
+      <g class="tooltip" transform="translate(10,-10)">
+        <rect x="0" y="0" width="200" height="60" rx="8" ry="8"
+              fill="white" stroke="#4a276a" stroke-width="1"/>
+        <image href="/MS_fotki/swinoujscie.jpg" x="5" y="5" width="72" height="50"/>
+        <text class="tooltip-text" x="82" y="15">Świnoujście</text>
+        <text class="tooltip-text" x="82" y="28">LITANIA</text>
+        <text class="tooltip-text" x="82" y="41">BEZSILNEGO</text>
+        <text class="tooltip-text" x="82" y="54"></text>
+      </g>
+    </a>
+
+    <!-- BOX 2 – inny link -->
+    <a xlink:href="https://www.dwutygodnik.com/artykul/12054-dopuszczac-wszystkich-do-glosu.html" target="_top">
+      <g class="tooltip" transform="translate(10,50)">
+        <rect x="0" y="0" width="165" height="60" rx="8" ry="8"
+              fill="white" stroke="#4a276a" stroke-width="1"/>
+        <image href="slupsk.jpg" x="5" y="5" width="72" height="50"/>
+        <text class="tooltip-text" x="82" y="15">Słupsk</text>
+        <text class="tooltip-text" x="82" y="28">DOPUSZCZAĆ</text>
+        <text class="tooltip-text" x="82" y="41">WSZYSTKICH</text>
+        <text class="tooltip-text" x="82" y="54">DO GŁOSU</text>
+      </g>
+    </a>
+
+    <!-- BOX 3 – inny link -->
+    <a xlink:href="https://www.dwutygodnik.com/artykul/12121-mapa-sztuki-1-spolem-fest-bialystok.html" target="_top">
+      <g class="tooltip" transform="translate(10,110)">
+        <rect x="0" y="0" width="165" height="60" rx="8" ry="8"
+              fill="white" stroke="#4a276a" stroke-width="1"/>
+        <image href="bialystok.jpg" x="5" y="5" width="72" height="50"/>
+        <text class="tooltip-text" x="82" y="15">Białystok</text>
+        <text class="tooltip-text" x="82" y="28">SPOŁEM FEST.</text>
+        <text class="tooltip-text" x="82" y="41">BIAŁYSTOK</text>
+        <text class="tooltip-text" x="82" y="54"></text>
+      </g>
+    </a>
+
+    <!-- BOX 4 – inny link -->
+    <a xlink:href="https://www.dwutygodnik.com/artykul/12054-dopuszczac-wszystkich-do-glosu.html" target="_top">
+      <g class="tooltip" transform="translate(10,170)">
+        <rect x="0" y="0" width="165" height="60" rx="8" ry="8"
+              fill="white" stroke="#4a276a" stroke-width="1"/>
+        <image href="bialystok.jpg" x="5" y="5" width="72" height="50"/>
+        <text class="tooltip-text" x="82" y="15">Turośń Kościelna</text>
+        <text class="tooltip-text" x="82" y="28">FEST.</text>
+        <text class="tooltip-text" x="82" y="41">BIAŁYSTOK</text>
+        <text class="tooltip-text" x="82" y="54"></text>
+      </g>
+    </a>
+  </g>
+</g>
+
+
+
+
+
+    <!-- CITY 1 – Swinoujscie -->
+
+<g class="city" transform="translate(150,175)">
+  <!-- pin -->
+<!--  <image href="Szpilka_MS_SVG.jpg" x="-16" y="-32" width="32" height="32" class="pin"/> -->
+  <!-- labelka miasta -->
+  <text class="label" x="10" y="30" style="fill-opacity:0;">Świnoujśc</text>
+
+  <!-- grupa tooltipów, domyślnie ukryta -->
+  <g class="tooltip-group" transform="translate(0,0)">
+  
+    <!-- BOX 1 – osobny link -->
+    <a xlink:href="https://www.dwutygodnik.com/artykul/11976-litania-bezsilnego.html" target="_top">
+      <g class="tooltip" transform="translate(10,37)">
+        <rect x="0" y="0" width="165" height="60" rx="8" ry="8"
+              fill="white" stroke="#4a276a" stroke-width="1"/>
+        <image href="MS_fotki/swinoujscie.jpg" x="5" y="5" width="72" height="50"/>
+        <text class="tooltip-text" x="82" y="15"></text>
+        <text class="tooltip-text" x="82" y="28">LITANIA</text>
+        <text class="tooltip-text" x="82" y="41">BEZSILNEGO</text>
+        <text class="tooltip-text" x="82" y="54"></text>
+      </g>
+    </a>
+  </g>
+</g>
+
+    <!-- CITY 2 – Slupsk -->
+
+<g class="city" transform="translate(389,96)">
+  <!-- pin -->
+<!--  <image href="Szpilka_MS_SVG.png" x="-16" y="-32" width="32" height="32" class="pin"/> -->
+  <!-- labelka miasta -->
+  <text class="label" x="5" y="30" style="fill-opacity:0;">Słups</text>
+
+  <!-- grupa tooltipów, domyślnie ukryta -->
+  <g class="tooltip-group" transform="translate(0,0)">
+  
+
+    <!-- BOX 2 – inny link -->
+    <a xlink:href="https://www.dwutygodnik.com/artykul/12054-dopuszczac-wszystkich-do-glosu.html" target="_top">
+      <g class="tooltip" transform="translate(10,37)">
+        <rect x="0" y="0" width="165" height="60" rx="8" ry="8"
+              fill="white" stroke="#4a276a" stroke-width="1"/>
+        <image href="MS_fotki/slupsk.jpg" x="5" y="5" width="72" height="50"/>
+        <text class="tooltip-text" x="82" y="15"></text>
+        <text class="tooltip-text" x="82" y="21">DOPUSZCZAĆ</text>
+        <text class="tooltip-text" x="82" y="34">WSZYSTKICH</text>
+        <text class="tooltip-text" x="82" y="47">DO GŁOSU</text>
+      </g>
+    </a>
+  </g>
+</g>
+
+
+    <!-- CITY 3 – Czestochowa -->
+
+<g class="city" transform="translate(558,622)">
+  <!-- pin -->
+<!--  <image href="Szpilka_MS_SVG.png" x="-16" y="-32" width="32" height="32" class="pin"/> -->
+  <!-- labelka miasta -->
+  <text class="label" x="5" y="30" style="fill-opacity:0;">Częstocho</text>
+
+  <!-- grupa tooltipów, domyślnie ukryta -->
+  <g class="tooltip-group" transform="translate(0,0)">
+  
+
+    <!-- BOX 2 – inny link -->
+    <a xlink:href="https://www.dwutygodnik.com/artykul/12019-widok-cudzego-zycia.html" target="_top">
+      <g class="tooltip" transform="translate(10,37)">
+        <rect x="0" y="0" width="165" height="60" rx="8" ry="8"
+              fill="white" stroke="#4a276a" stroke-width="1"/>
+        <image href="MS_fotki/czestochowa.jpg" x="5" y="5" width="72" height="50"/>
+        <text class="tooltip-text" x="82" y="15"></text>
+        <text class="tooltip-text" x="82" y="21">WIDOK</text>
+        <text class="tooltip-text" x="82" y="34">CUDZEGO</text>
+        <text class="tooltip-text" x="82" y="47">ŻYCIA</text>
+      </g>
+    </a>
+  </g>
+</g>
+
+
+    <!-- CITY 4 – Opole -->
+
+<g class="city" transform="translate(467,645)">
+  <!-- pin -->
+<!--  <image href="Szpilka_MS_SVG.png" x="-16" y="-32" width="32" height="32" class="pin"/> -->
+  <!-- labelka miasta -->
+  <text class="label" x="7" y="30" style="fill-opacity:0;">Opol</text>
+
+  <!-- grupa tooltipów, domyślnie ukryta -->
+  <g class="tooltip-group" transform="translate(0,0)">
+  
+
+    <!-- BOX 2 – inny link -->
+    <a xlink:href="https://www.dwutygodnik.com/artykul/12027-witamy-w-stolicy-polskiej-piosenki.html" target="_top">
+      <g class="tooltip" transform="translate(10,37)">
+        <rect x="0" y="0" width="165" height="60" rx="8" ry="8"
+              fill="white" stroke="#4a276a" stroke-width="1"/>
+        <image href="MS_fotki/opole.jpg" x="5" y="5" width="72" height="50"/>
+        <text class="tooltip-text" x="82" y="15"></text>
+        <text class="tooltip-text" x="82" y="15">WITAMY</text>
+        <text class="tooltip-text" x="82" y="28">W STOLICY</text>
+        <text class="tooltip-text" x="82" y="41">POLSKIEJ </text>
+        <text class="tooltip-text" x="82" y="54">PIOSENKI</text>
+      </g>
+    </a>
+  </g>
+</g>
+
+
+    <!-- CITY 5 – Bytom -->
+
+<g class="city" transform="translate(533,690)">
+  <!-- pin -->
+<!--  <image href="Szpilka_MS_SVG.png" x="-16" y="-32" width="32" height="32" class="pin"/> -->
+  <!-- labelka miasta -->
+  <text class="label" x="7" y="30" style="fill-opacity:0;">Bytom</text>
+
+  <!-- grupa tooltipów, domyślnie ukryta -->
+  <g class="tooltip-group" transform="translate(0,0)">
+  
+
+    <!-- BOX 2 – inny link -->
+    <a xlink:href="https://pl.wikipedia.org/wiki/Bytom" target="_top">
+      <g class="tooltip" transform="translate(10,37)">
+        <rect x="0" y="0" width="165" height="60" rx="8" ry="8"
+              fill="white" stroke="#4a276a" stroke-width="1"/>
+        <image href="MS_fotki/brak_foty.jpg" x="5" y="5" width="72" height="50"/>
+        <text class="tooltip-text" x="82" y="15"></text>
+        <text class="tooltip-text" x="82" y="15"></text>
+        <text class="tooltip-text" x="82" y="34">BYTOM</text>
+        <text class="tooltip-text" x="82" y="41"></text>
+        <text class="tooltip-text" x="82" y="54"></text>
+      </g>
+    </a>
+  </g>
+</g>
+
+    <!-- CITY 1 – Bialystok -->
+
+<g class="city" transform="translate(880,292)">
+  <!-- pin -->
+<!--  <image href="Szpilka_MS_SVG.png" x="-16" y="-32" width="32" height="32" class="pin"/> -->
+  <!-- labelka miasta -->
+  <text class="label" x="-115" y="28" style="fill-opacity:0;">Białysto</text>
+
+  <!-- grupa tooltipów, domyślnie ukryta -->
+  <g class="tooltip-group" transform="translate(0,0)">
+
+    <!-- BOX 3 – inny link -->
+    <a xlink:href="https://www.dwutygodnik.com/artykul/12121-mapa-sztuki-1-spolem-fest-bialystok.html" target="_top">
+      <g class="tooltip" transform="translate(-115,37)">
+        <rect x="0" y="0" width="165" height="60" rx="8" ry="8"
+              fill="white" stroke="#4a276a" stroke-width="1"/>
+        <image href="MS_fotki/bialystok.jpg" x="5" y="5" width="72" height="50"/>
+        <text class="tooltip-text" x="82" y="15"></text>
+        <text class="tooltip-text" x="82" y="28">SPOŁEM FEST.</text>
+        <text class="tooltip-text" x="82" y="41">BIAŁYSTOK</text>
+        <text class="tooltip-text" x="82" y="54"></text>
+      </g>
+    </a>
+
+    <!-- BOX 4 – inny link -->
+    <a xlink:href="https://pl.wikipedia.org/wiki/Turośń_Kościelna" target="_top">
+      <g class="tooltip" transform="translate(-115,97)">
+        <rect x="0" y="0" width="165" height="60" rx="8" ry="8"
+              fill="white" stroke="#4a276a" stroke-width="1"/>
+        <image href="MS_fotki/brak_foty.jpg" x="5" y="5" width="72" height="50"/>
+        <text class="tooltip-text" x="82" y="15">Turośń Kościelna</text>
+        <text class="tooltip-text" x="82" y="28">JAK NIE BĘDZIE.</text>
+        <text class="tooltip-text" x="82" y="41">TO SIĘ USUNIE</text>
+        <text class="tooltip-text" x="82" y="54"></text>
+      </g>
+    </a>
+  </g>
+</g>
+
+    <!-- CITY 1 – Ostrowiec -->
+
+<g class="city" transform="translate(761,592)">
+  <!-- pin -->
+<!--  <image href="Szpilka_MS_SVG.png" x="-16" y="-32" width="32" height="32" class="pin"/> -->
+  <!-- labelka miasta -->
+  <text class="label" x="9" y="30" style="fill-opacity:0;">
+        <tspan x="9" dy="0">Ostrowi</tspan>
+        <tspan x="9" dy="1.1em">Świętokrzy</tspan>
+</text>
+  <!-- grupa tooltipów, domyślnie ukryta -->
+  <g class="tooltip-group" transform="translate(0,0)">
+  
+
+    <!-- BOX 2 – inny link -->
+    <a xlink:href="https://www.dwutygodnik.com/artykul/12130-ostrowce.html" target="_top">
+      <g class="tooltip" transform="translate(10,74)">
+        <rect x="0" y="0" width="165" height="60" rx="8" ry="8"
+              fill="white" stroke="#4a276a" stroke-width="1"/>
+        <image href="MS_fotki/ostrowiec.jpg" x="5" y="5" width="72" height="50"/>
+        <text class="tooltip-text" x="82" y="15"></text>
+        <text class="tooltip-text" x="82" y="34">OSTROWCE</text>
+        <text class="tooltip-text" x="82" y="41"></text>
+        <text class="tooltip-text" x="82" y="54"></text>
+      </g>
+    </a>
+  </g>
+</g>
+
+    <!-- CITY 1 – Przemyśl -->
+
+<g class="city" transform="translate(837,744)">
+  <!-- pin -->
+<!--  <image href="Szpilka_MS_SVG.png" x="-16" y="-32" width="32" height="32" class="pin"/> -->
+  <!-- labelka miasta -->
+  <text class="label" x="-110" y="32" style="fill-opacity:0;">Przemy</text>
+
+  <!-- grupa tooltipów, domyślnie ukryta -->
+  <g class="tooltip-group" transform="translate(0,0)">
+
+    <!-- BOX 3 – inny link -->
+    <a xlink:href="https://www.dwutygodnik.com/artykul/12165-pauza.html" target="_top">
+      <g class="tooltip" transform="translate(-110,40)">
+        <rect x="0" y="0" width="165" height="60" rx="8" ry="8"
+              fill="white" stroke="#4a276a" stroke-width="1"/>
+        <image href="MS_fotki/przemysl.jpg" x="5" y="5" width="72" height="50"/>
+        <text class="tooltip-text" x="82" y="15"></text>
+        <text class="tooltip-text" x="82" y="34">PAUZA</text>
+        <text class="tooltip-text" x="82" y="41"></text>
+        <text class="tooltip-text" x="82" y="54"></text>
+      </g>
+    </a>
+  </g>
+</g>
+
+
+    <!-- CITY 1 – Krosno -->
+
+<g class="city" transform="translate(689,770)">
+  <!-- pin -->
+<!--  <image href="Szpilka_MS_SVG.png" x="-16" y="-32" width="32" height="32" class="pin"/> -->
+  <!-- labelka miasta -->
+  <text class="label" x="-88" y="27" style="fill-opacity:0;">Krosn</text>
+
+  <!-- grupa tooltipów, domyślnie ukryta -->
+  <g class="tooltip-group" transform="translate(0,0)">
+
+    <!-- BOX 3 – inny link -->
+    <a xlink:href="https://pl.wikipedia.org/wiki/Krosno" target="_top">
+      <g class="tooltip" transform="translate(-88,36)">
+        <rect x="0" y="0" width="165" height="60" rx="8" ry="8"
+              fill="white" stroke="#4a276a" stroke-width="1"/>
+        <image href="MS_fotki/brak_foty.jpg" x="5" y="5" width="72" height="50"/>
+        <text class="tooltip-text" x="82" y="15"></text>
+        <text class="tooltip-text" x="82" y="34">KROSNO</text>
+        <text class="tooltip-text" x="82" y="41"></text>
+        <text class="tooltip-text" x="82" y="54"></text>
+      </g>
+    </a>
+  </g>
+</g>
+
+    <!-- CITY 1 – Luslawice -->
+
+<g class="city" transform="translate(685,740)">
+  <!-- pin -->
+<!--  <image href="Szpilka_MS_SVG.png" x="-16" y="-32" width="32" height="32" class="pin"/> -->
+  <!-- labelka miasta -->
+  <text class="label" x="-120" y="23" style="fill-opacity:0;">Lusławic</text>
+
+  <!-- grupa tooltipów, domyślnie ukryta -->
+  <g class="tooltip-group" transform="translate(0,0)">
+
+    <!-- BOX 3 – inny link -->
+    <a xlink:href="https://pl.wikipedia.org/wiki/Lusławice_(województwo_małopolskie)" target="_top">
+      <g class="tooltip" transform="translate(-120,32)">
+        <rect x="0" y="0" width="165" height="60" rx="8" ry="8"
+              fill="white" stroke="#4a276a" stroke-width="1"/>
+        <image href="MS_fotki/brak_foty.jpg" x="5" y="5" width="72" height="50"/>
+        <text class="tooltip-text" x="82" y="15">(oraz Tuchów,</text>
+        <text class="tooltip-text" x="82" y="28">Zwiernik i Tarnów)</text>
+        <text class="tooltip-text" x="82" y="41">???</text>
+        <text class="tooltip-text" x="82" y="54"></text>
+      </g>
+    </a>
+    
+    <!-- BOX 3 – inny link -->
+    <a xlink:href="https://pl.wikipedia.org/wiki/Lusławice_(województwo_małopolskie)" target="_top">
+      <g class="tooltip" transform="translate(-120,-122)">
+        <rect x="0" y="0" width="165" height="60" rx="8" ry="8"
+              fill="white" stroke="#4a276a" stroke-width="1"/>
+        <image href="MS_fotki/brak_foty.jpg" x="5" y="5" width="72" height="50"/>
+        <text class="tooltip-text" x="82" y="15">Tuchów</text>
+        <text class="tooltip-text" x="82" y="28">TYTUŁ ???</text>
+        <text class="tooltip-text" x="82" y="41"></text>
+        <text class="tooltip-text" x="82" y="54"></text>
+      </g>
+    </a>
+
+    
+    <!-- BOX 3 – inny link -->
+    <a xlink:href="https://pl.wikipedia.org/wiki/Lusławice_(województwo_małopolskie)" target="_top">
+      <g class="tooltip" transform="translate(-120,-182)">
+        <rect x="0" y="0" width="165" height="60" rx="8" ry="8"
+              fill="white" stroke="#4a276a" stroke-width="1"/>
+        <image href="MS_fotki/brak_foty.jpg" x="5" y="5" width="72" height="50"/>
+        <text class="tooltip-text" x="82" y="15">Zwiernik</text>
+        <text class="tooltip-text" x="82" y="28">TYTUŁ ???</text>
+        <text class="tooltip-text" x="82" y="41"></text>
+        <text class="tooltip-text" x="82" y="54"></text>
+      </g>
+    </a>
+    
+    <!-- BOX 3 – inny link -->
+    <a xlink:href="https://pl.wikipedia.org/wiki/Lusławice_(województwo_małopolskie)" target="_top">
+      <g class="tooltip" transform="translate(-120,-242)">
+        <rect x="0" y="0" width="165" height="60" rx="8" ry="8"
+              fill="white" stroke="#4a276a" stroke-width="1"/>
+        <image href="MS_fotki/brak_foty.jpg" x="5" y="5" width="72" height="50"/>
+        <text class="tooltip-text" x="82" y="15">Tarnów</text>
+        <text class="tooltip-text" x="82" y="28">TYTUŁ ???</text>
+        <text class="tooltip-text" x="82" y="41"></text>
+        <text class="tooltip-text" x="82" y="54"></text>
+      </g>
+    </a>
+  </g>
+</g>
+
+
+
+
+
+
+
+
+
+
+
+
+</svg>

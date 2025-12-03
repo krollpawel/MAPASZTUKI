@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Strona z MAPĄ sztuki</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      margin: 2rem auto;
+      max-width: 800px;
+      line-height: 1.6;
+    }
+
+    iframe {
+      width: 80%;
+      aspect-ratio: 1107 / 899; /* dokładne proporcje mapy */
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1>Artykuł o MAPIE sztuki</h1>
+  <p>
+    MAPA sztuki to interaktywny przewodnik po lokalnych twórcach.
+    Możesz eksplorować mapę poniżej, klikając w wybrane punkty.
+  </p>
+
+  <object data="MAPASZTUKI_robocza_wybrana_bez_miast.svg" type="image/svg+xml" width="100%" height="auto"></object>
+
+
+  <!--   <iframe src="MapaSztuki-Fetch&Cities.htm" loading="lazy" allowfullscreen></iframe> -->
+
+  <p>
+    Każdy punkt na mapie prowadzi do profilu artysty.
+    Kliknięcie w nazwę otworzy jego stronę w tym samym oknie.
+  </p>
+</body>
+</html>
