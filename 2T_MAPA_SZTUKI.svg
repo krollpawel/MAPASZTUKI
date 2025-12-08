@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 600 551">
+
+  <defs>
+    <style><![CDATA[
+      /* Osadzona czcionka LeagueGothic (Google Fonts – WOFF2 → Base64) */
+
+@font-face {
+    font-family: 'LeagueGothic';
+    src: url('data:font/woff2;charset=utf-8;base64,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') format('woff2'),
+        url('data:font/woff;charset=utf-8;base64,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') format('woff'),
+        url('subset-LeagueGothic-Regular.svg#LeagueGothic-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Wyłączenie zaznaczania tekstu w całym SVG (mobile long-press fix) */
+svg, svg * {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none; /* blokuje systemowe menu */
+}
+
+.city .pin {
+  pointer-events: none;
+}
+
+      a text { cursor: pointer; }
+
+      /* Ozdobna czcionka dla etykiet */
+      .label {
+        font-family: "LeagueGothic", sans-serif;
+        fill: #333333;
+        font-size: 24px;
+      }
+
+      .small-label {
+        font-family: "LeagueGothic", sans-serif;
+        fill: #222222;
+        font-size: 10px;
+      }
+
+      /* Animacja lekkiego przechyłu */
+      @keyframes wobble {
+        0%   { transform: rotate(-10deg); }
+        50%  { transform: rotate(10deg); }
+        100% { transform: rotate(-10deg); }
+      }
+
+      /* Animacja na hover wrappera city */
+      .city:hover .pin {
+        animation: wobble 0.6s ease-in-out infinite;
+        transform-origin: 0px 0px;
+      }
+
+    /* ---- DYMKI ---- */
+    /* domyślnie ukryte */
+    .tooltip { 
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.2s ease-in-out;
+    }
+
+    /* pojawiają się po hover na pinezce lub nazwie miasta */
+    .city:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    /* tekst w dymku */
+    .tooltip-text {
+      font-family: Arial, sans-serif;
+      font-size: 9px;
+      fill: #4a276a;
+    }
+
+    ]]></style>
+  </defs>
+
+  <!-- Tło mapy -->
+  <image href="2T_mapa.jpg"
+         x="0" y="0" width="550" height="550" />
+
+  <!-- Kredyty w mapie -->
+         <text x="472" y="530" font-size="7" fill="#555" font-family="sans-serif" opacity="0.8">Mapa: Ola Szczepaniak</text>
+         <text x="395" y="538" font-size="7" fill="#555" font-family="sans-serif" opacity="0.8">Interaktywność i kodowanie: Ad@m Szym@ński</text>
+
+
+  <!-- ============================= -->
+  <!--      PUNKTY Z PNG + TEXT      -->
+  <!-- ============================= -->
+
+
+    <!-- CITY 1 – Swinoujscie -->
+<g class="city" transform="translate(25,110)">
+  <!-- pin -->
+  <circle class="pin" cx="0" cy="0" r="3" fill="#9222d3"/>
+  <image href="Szpilka_MS_SVG.png" x="-12" y="-24" width="24" height="24" class="pin"/>
+  <!-- labelka miasta -->
+  <text class="label" x="5" y="20" style="fill-opacity:1;">Świnoujście</text>
+  <!-- grupa tooltipów, domyślnie ukryta -->
+  <g class="tooltip-group" transform="translate(0,0)">
+
+    <!-- BOX 1 -->
+    <a xlink:href="https://www.dwutygodnik.com/artykul/11976-litania-bezsilnego.html" target="Artykuly_z_MS">
+      <g class="tooltip" transform="translate(3,27)">
+        <rect x="0" y="0" width="165" height="60" rx="8" ry="8"
+              fill="white" stroke="#4a276a" stroke-width="1"/>
+        <image href="MS_fotki/swinoujscie.jpg" x="5" y="5" width="72" height="50"/>
+        <text class="tooltip-text" x="82" y="13"></text>
+        <text class="tooltip-text" x="82" y="28">LITANIA</text>
+        <text class="tooltip-text" x="82" y="38">BEZSILNEGO</text>
+        <text class="tooltip-text" x="82" y="53"></text>
+      </g>
+    </a>
+  </g>
+</g>
+
+    <!-- CITY 2 – Slupsk -->
+<g class="city" transform="translate(175,60)">
+  <!-- pin -->
+  <circle class="pin" cx="0" cy="0" r="3" fill="#9222d3"/>
+  <image href="Szpilka_MS_SVG.png" x="-12" y="-24" width="24" height="24" class="pin"/>
+  <!-- labelka miasta -->
+  <text class="label" x="5" y="20" style="fill-opacity:1;">Słupsk</text>
+  <!-- grupa tooltipów, domyślnie ukryta -->
+  <g class="tooltip-group" transform="translate(0,0)">
+
+    <!-- BOX 2 -->
+    <a xlink:href="https://www.dwutygodnik.com/artykul/12054-dopuszczac-wszystkich-do-glosu.html" target="Artykuly_z_MS">
+      <g class="tooltip" transform="translate(5,27)">
+        <rect x="0" y="0" width="165" height="60" rx="8" ry="8"
+              fill="white" stroke="#4a276a" stroke-width="1"/>
+        <image href="MS_fotki/slupsk.jpg" x="5" y="5" width="72" height="50"/>
+        <text class="tooltip-text" x="82" y="13"></text>
+        <text class="tooltip-text" x="82" y="23">DOPUSZCZAĆ</text>
+        <text class="tooltip-text" x="82" y="33">WSZYSTKICH</text>
+        <text class="tooltip-text" x="82" y="43">DO GŁOSU</text>
+        <text class="tooltip-text" x="82" y="53"></text>
+      </g>
+    </a>
+  </g>
+</g>
+
+    <!-- CITY 3 – Bialystok, a właściwie tylko Turośń Kościelna, bez linku -->
+<g class="city" transform="translate(478,177)">
+  <circle class="pin" cx="0" cy="0" r="2" fill="#9222d3"/>
+<!--     <image href="Szpilka_MS_SVG.png" x="-12" y="-24" width="24" height="24" class="pin"/> -->
+  <text class="small-label" x="4" y="8" style="fill-opacity:1;">Turośń Kościelna</text>
+</g>
+
+    <!-- CITY 3 – Bialystok -->
+<g class="city" transform="translate(485,170)">
+  <!-- pin -->
+  <circle class="pin" cx="0" cy="0" r="3" fill="#9222d3"/>
+    <image href="Szpilka_MS_SVG.png" x="-12" y="-24" width="24" height="24" class="pin"/>
+  <!-- labelka miasta -->
+  <text class="label" x="-75" y="0" style="fill-opacity:1;">Białystok</text>
+  <!-- grupa tooltipów, domyślnie ukryta -->
+  <g class="tooltip-group" transform="translate(0,0)">
+
+    <!-- BOX 3 – inny link -->
+    <a xlink:href="https://www.dwutygodnik.com/artykul/12121-mapa-sztuki-1-spolem-fest-bialystok.html" target="Artykuly_z_MS">
+      <g class="tooltip" transform="translate(-75,6)">
+        <rect x="0" y="0" width="165" height="60" rx="8" ry="8"
+              fill="white" stroke="#4a276a" stroke-width="1"/>
+        <image href="MS_fotki/bialystok.jpg" x="5" y="5" width="72" height="50"/>
+        <text class="tooltip-text" x="82" y="23">MAPA SZTUKI (1):</text>
+        <text class="tooltip-text" x="82" y="33">SPOŁEM FEST.</text>
+        <text class="tooltip-text" x="82" y="43">BIAŁYSTOK</text>
+        <text class="tooltip-text" x="82" y="53"></text>
+      </g>
+    </a>
+
+    <!-- BOX 4 – inny link -->
+     <a xlink:href="https://open.spotify.com/episode/62dYJkqVvOVlXoEduWpsFI?go=1&amp;sp_cid=2f96949b5662c7a97a66e143a7c35ac9&amp;utm_source=embed_player_p&amp;utm_medium=desktop&amp;nd=1&amp;dlsi=29a13b280ec0474a" target="Podcasty_z_MS">
+      <g class="tooltip" transform="translate(-75,66)">
+        <rect x="0" y="0" width="165" height="60" rx="8" ry="8"
+              fill="white" stroke="#4a276a" stroke-width="1"/>
+        <image href="MS_fotki/bialystok.jpg" x="5" y="5" width="72" height="50"/>
+        <image href="MS_fotki/Znaczek_Spotify.png" x="60" y="38" width="14" height="14"/>
+        <text class="tooltip-text" x="82" y="18">MAPA SZTUKI (1):</text>
+        <text class="tooltip-text" x="82" y="28">SPOŁEM FEST.</text>
+        <text class="tooltip-text" x="82" y="38">BIAŁYSTOK</text>
+        <text class="tooltip-text" x="82" y="48">(podkast)</text>
+        <text class="tooltip-text" x="82" y="53"></text>
+      </g>
+    </a>
+
+    <!-- BOX 5 – inny link -->
+     <a xlink:href="https://pl.wikipedia.org/wiki/Turośń Kościelna" target="Artykuly_z_MS">
+      <g class="tooltip" transform="translate(-55,126)">
+        <rect x="0" y="0" width="165" height="60" rx="8" ry="8"
+              fill="white" stroke="#4a276a" stroke-width="1"/>
+        <image href="MS_fotki/brak_foty.jpg" x="5" y="5" width="72" height="50"/>
+        <text class="tooltip-text" x="82" y="18">Turośń Kościelna</text>
+        <text class="tooltip-text" x="82" y="28"></text>
+        <text class="tooltip-text" x="82" y="38">JAK NIE BĘDZIE.</text>
+        <text class="tooltip-text" x="82" y="48">TO SIĘ USUNIE</text>
+      </g>
+    </a>
+  </g>
+</g>
+
+    <!-- CITY 4 – Przemyśl -->
+<g class="city" transform="translate(485,450)">
+  <!-- pin -->
+  <circle class="pin" cx="0" cy="0" r="3" fill="#9222d3"/>
+  <image href="Szpilka_MS_SVG.png" x="-12" y="-24" width="24" height="24" class="pin"/>
+<!--  <image href="Szpilka_MS_SVG.png" x="-16" y="-32" width="32" height="32" class="pin"/> -->
+  <!-- labelka miasta -->
+  <text class="label" x="-63" y="17" style="fill-opacity:1;">Przemyśl</text>
+  <!-- grupa tooltipów, domyślnie ukryta -->
+  <g class="tooltip-group" transform="translate(0,0)">
+
+    <!-- BOX 6 – inny link -->
+    <a xlink:href="https://www.dwutygodnik.com/artykul/12165-pauza.html" target="Artykuly_z_MS">
+      <g class="tooltip" transform="translate(-63,23)">
+        <rect x="0" y="0" width="165" height="60" rx="8" ry="8"
+              fill="white" stroke="#4a276a" stroke-width="1"/>
+        <image href="MS_fotki/przemysl.jpg" x="5" y="5" width="72" height="50"/>
+        <text class="tooltip-text" x="82" y="13"></text>
+        <text class="tooltip-text" x="82" y="23"></text>
+        <text class="tooltip-text" x="82" y="33">PAUZA</text>
+        <text class="tooltip-text" x="82" y="43"></text>
+        <text class="tooltip-text" x="82" y="53"></text>
+      </g>
+    </a>
+  </g>
+</g>
+
+
+    <!-- CITY 5 – Ostrowiec Swietokrzyski-->
+
+<g class="city" transform="translate(400,357)">
+  <!-- pin -->
+  <circle class="pin" cx="0" cy="0" r="3" fill="#9222d3"/>
+  <image href="Szpilka_MS_SVG.png" x="-12" y="-24" width="24" height="24" class="pin"/>
+  <!-- labelka miasta -->
+  <text class="label" x="3" y="17" style="fill-opacity:1;">
+        <tspan x="5" dy="0">Ostrowiec</tspan>
+        <tspan x="5" dy="0.95em">Świętokrzyski</tspan>
+  </text>
+  <!-- grupa tooltipów, domyślnie ukryta -->
+  <g class="tooltip-group" transform="translate(0,0)">
+
+    <!-- BOX 7 – inny link -->
+    <a xlink:href="https://www.dwutygodnik.com/artykul/12130-ostrowce.html" target="Artykuly_z_MS">
+      <g class="tooltip" transform="translate(5,46)">
+        <rect x="0" y="0" width="165" height="60" rx="8" ry="8"
+              fill="white" stroke="#4a276a" stroke-width="1"/>
+        <image href="MS_fotki/ostrowiec.jpg" x="5" y="5" width="72" height="50"/>
+        <text class="tooltip-text" x="82" y="15"></text>
+        <text class="tooltip-text" x="82" y="34">OSTROWCE</text>
+        <text class="tooltip-text" x="82" y="41"></text>
+        <text class="tooltip-text" x="82" y="54"></text>
+      </g>
+    </a>
+  </g>
+</g>
+
+    <!-- CITY 6 – Krosno -->
+
+<g class="city" transform="translate(405,465)">
+  <!-- pin -->
+  <circle class="pin" cx="0" cy="0" r="3" fill="#9222d3"/>
+  <image href="Szpilka_MS_SVG.png" x="-12" y="-24" width="24" height="24" class="pin"/>
+<!--  <image href="Szpilka_MS_SVG.png" x="-16" y="-32" width="32" height="32" class="pin"/> -->
+  <!-- labelka miasta -->
+  <text class="label" x="-48" y="17" style="fill-opacity:1;">Krosno</text>
+  <!-- grupa tooltipów, domyślnie ukryta -->
+  <g class="tooltip-group" transform="translate(0,0)">
+
+    <!-- BOX 8 – inny link -->
+    <a xlink:href="https://www.dwutygodnik.com/artykul/12220-mapa-sztuki-2-krosno.html" target="Artykuly_z_MS">
+      <g class="tooltip" transform="translate(-48,21)">
+        <rect x="0" y="0" width="165" height="60" rx="8" ry="8"
+              fill="white" stroke="#4a276a" stroke-width="1"/>
+        <image href="MS_fotki/krosno1_(podcast).jpg" x="5" y="5" width="72" height="50"/>
+        <text class="tooltip-text" x="82" y="23">MAPA SZTUKI (2):</text>
+        <text class="tooltip-text" x="82" y="33">KROSNO</text>
+        <text class="tooltip-text" x="82" y="43"></text>
+        <text class="tooltip-text" x="82" y="53"></text>
+      </g>
+    </a>
+
+    <!-- BOX 9 – inny link -->
+     <a xlink:href="https://open.spotify.com/episode/2bJcmuqkejVQIdGhqIeliS?go=1&amp;sp_cid=3eb4f5237d87430283d880401ef6c40b&amp;utm_source=embed_player_p&amp;utm_medium=desktop&amp;nd=1&amp;dlsi=ee0e2ae8f9a741ae" target="Artykuly_z_MS">
+      <g class="tooltip" transform="translate(-48,21)">
+        <rect x="-165" y="0" width="165" height="60" rx="8" ry="8"
+              fill="white" stroke="#4a276a" stroke-width="1"/>
+        <image href="MS_fotki/krosno1_(podcast).jpg" x="-160" y="5" width="72" height="50"/>
+        <image href="MS_fotki/Znaczek_Spotify.png" x="-157" y="38" width="14" height="14"/>
+        <text class="tooltip-text" x="-83" y="23">MAPA SZTUKI (2):</text>
+        <text class="tooltip-text" x="-83" y="33">KROSNO</text>
+        <text class="tooltip-text" x="-83" y="43">(podkast)</text>
+        <text class="tooltip-text" x="-83" y="53"></text>
+      </g>
+    </a>
+
+    <!-- BOX 10 – inny link -->
+     <a xlink:href="https://pl.wikipedia.org/wiki/Krosno" target="Artykuly_z_MS">
+      <g class="tooltip" transform="translate(-48,21)">
+        <rect x="-330" y="0" width="165" height="60" rx="8" ry="8"
+              fill="white" stroke="#4a276a" stroke-width="1"/>
+        <image href="MS_fotki/brak_foty.jpg" x="-325" y="5" width="72" height="50"/>
+        <image href="MS_fotki/Znaczek_Spotify.png" x="-270" y="38" width="14" height="14"/>
+        <text class="tooltip-text" x="-248" y="23">DRUGI PODKAST</text>
+        <text class="tooltip-text" x="-248" y="33">Z KROSNA</text>
+        <text class="tooltip-text" x="-248" y="43">(podkast)</text>
+        <text class="tooltip-text" x="-248" y="53"></text>
+      </g>
+    </a>
+  </g>
+</g>
+
+    <!-- CITY 7 – Lusaawice, a właściwie tylko Tarnów, Tuchów, Zwiernik, bez linków -->
+
+<g class="city" transform="translate(366,434)">
+  <circle class="pin" cx="0" cy="0" r="2" fill="#9222d3"/>
+<!--     <image href="Szpilka_MS_SVG.png" x="-12" y="-24" width="24" height="24" class="pin"/> -->
+  <text class="small-label" x="0" y="-3" style="fill-opacity:1;">Tarnów</text>
+</g>
+
+<g class="city" transform="translate(369,447)">
+  <circle class="pin" cx="0" cy="0" r="2" fill="#9222d3"/>
+<!--     <image href="Szpilka_MS_SVG.png" x="-12" y="-24" width="24" height="24" class="pin"/> -->
+  <text class="small-label" x="4" y="8" style="fill-opacity:1;">Tuchów</text>
+</g>
+
+<g class="city" transform="translate(374,441)">
+  <circle class="pin" cx="0" cy="0" r="2" fill="#9222d3"/>
+<!--     <image href="Szpilka_MS_SVG.png" x="-12" y="-24" width="24" height="24" class="pin"/> -->
+  <text class="small-label" x="4" y="-0" style="fill-opacity:1;">Zwiernik</text>
+</g>
+
+    <!-- CITY 7 – Luslawice -->
+
+<g class="city" transform="translate(355,450)">
+  <!-- pin -->
+  <circle class="pin" cx="0" cy="0" r="3" fill="#9222d3"/>
+  <image href="Szpilka_MS_SVG.png" x="-12" y="-24" width="24" height="24" class="pin"/>
+<!--  <image href="Szpilka_MS_SVG.png" x="-16" y="-32" width="32" height="32" class="pin"/> -->
+  <!-- labelka miasta -->
+  <text class="label" x="-66" y="17" style="fill-opacity:1;">Lusławice</text>
+  <!-- grupa tooltipów, domyślnie ukryta -->
+  <g class="tooltip-group" transform="translate(0,0)">
+
+    <!-- BOX 11 – inny link -->
+    <a xlink:href="https://pl.wikipedia.org/wiki/Lusławice_(województwo_małopolskie)" target="Artykuly_z_MS">
+      <g class="tooltip" transform="translate(-66,23)">
+        <rect x="0" y="0" width="165" height="60" rx="8" ry="8"
+              fill="white" stroke="#4a276a" stroke-width="1"/>
+        <image href="MS_fotki/brak_foty.jpg" x="5" y="5" width="72" height="50"/>
+        <text class="tooltip-text" x="82" y="13">(oraz Tuchów,</text>
+        <text class="tooltip-text" x="82" y="23">Zwiernik i Tarnów)</text>
+        <text class="tooltip-text" x="82" y="33">???</text>
+        <text class="tooltip-text" x="82" y="43"></text>
+        <text class="tooltip-text" x="82" y="53"></text>
+      </g>
+    </a>
+    
+    <!-- BOX 3 – inny link -->
+<!--     <a xlink:href="https://pl.wikipedia.org/wiki/Lusławice_(województwo_małopolskie)" target="Artykuly_z_MS">
+      <g class="tooltip" transform="translate(-120,-122)">
+        <rect x="0" y="0" width="165" height="60" rx="8" ry="8"
+              fill="white" stroke="#4a276a" stroke-width="1"/>
+        <image href="MS_fotki/brak_foty.jpg" x="5" y="5" width="72" height="50"/>
+        <text class="tooltip-text" x="82" y="15">Tuchów</text>
+        <text class="tooltip-text" x="82" y="28">TYTUŁ ???</text>
+        <text class="tooltip-text" x="82" y="41"></text>
+        <text class="tooltip-text" x="82" y="54"></text>
+      </g>
+    </a> -->
+
+    <!-- BOX 3 – inny link -->
+<!--     <a xlink:href="https://pl.wikipedia.org/wiki/Lusławice_(województwo_małopolskie)" target="Artykuly_z_MS">
+      <g class="tooltip" transform="translate(-120,-182)">
+        <rect x="0" y="0" width="165" height="60" rx="8" ry="8"
+              fill="white" stroke="#4a276a" stroke-width="1"/>
+        <image href="MS_fotki/brak_foty.jpg" x="5" y="5" width="72" height="50"/>
+        <text class="tooltip-text" x="82" y="15">Zwiernik</text>
+        <text class="tooltip-text" x="82" y="28">TYTUŁ ???</text>
+        <text class="tooltip-text" x="82" y="41"></text>
+        <text class="tooltip-text" x="82" y="54"></text>
+      </g>
+    </a> -->
+    
+    <!-- BOX 3 – inny link -->
+<!--     <a xlink:href="https://pl.wikipedia.org/wiki/Lusławice_(województwo_małopolskie)" target="Artykuly_z_MS">
+      <g class="tooltip" transform="translate(-120,-242)">
+        <rect x="0" y="0" width="165" height="60" rx="8" ry="8"
+              fill="white" stroke="#4a276a" stroke-width="1"/>
+        <image href="MS_fotki/brak_foty.jpg" x="5" y="5" width="72" height="50"/>
+        <text class="tooltip-text" x="82" y="15">Tarnów</text>
+        <text class="tooltip-text" x="82" y="28">TYTUŁ ???</text>
+        <text class="tooltip-text" x="82" y="41"></text>
+        <text class="tooltip-text" x="82" y="54"></text>
+      </g>
+    </a> -->
+  </g>
+</g>
+
+    <!-- CITY 8 – Czestochowa -->
+
+<g class="city" transform="translate(280,380)">
+  <!-- pin -->
+  <circle class="pin" cx="0" cy="0" r="3" fill="#9222d3"/>
+  <image href="Szpilka_MS_SVG.png" x="-12" y="-24" width="24" height="24" class="pin"/>
+<!--  <image href="Szpilka_MS_SVG.png" x="-16" y="-32" width="32" height="32" class="pin"/> -->
+  <!-- labelka miasta -->
+  <text class="label" x="5" y="17" style="fill-opacity:1;">Częstochowa</text>
+  <!-- grupa tooltipów, domyślnie ukryta -->
+  <g class="tooltip-group" transform="translate(0,0)">
+  
+
+    <!-- BOX 12 – inny link -->
+    <a xlink:href="https://www.dwutygodnik.com/artykul/12019-widok-cudzego-zycia.html" target="Artykuly_z_MS">
+      <g class="tooltip" transform="translate(5,23)">
+        <rect x="0" y="0" width="165" height="60" rx="8" ry="8"
+              fill="white" stroke="#4a276a" stroke-width="1"/>
+        <image href="MS_fotki/czestochowa.jpg" x="5" y="5" width="72" height="50"/>
+        <text class="tooltip-text" x="82" y="13"></text>
+        <text class="tooltip-text" x="82" y="23">WIDOK</text>
+        <text class="tooltip-text" x="82" y="33">CUDZEGO</text>
+        <text class="tooltip-text" x="82" y="43">ŻYCIA</text>
+      </g>
+    </a>
+  </g>
+</g>
+
+
+    <!-- CITY 9 – Bytom -->
+
+<g class="city" transform="translate(270,422)">
+  <!-- pin -->
+  <circle class="pin" cx="0" cy="0" r="3" fill="#9222d3"/>
+  <image href="Szpilka_MS_SVG.png" x="-12" y="-24" width="24" height="24" class="pin"/>
+<!--  <image href="Szpilka_MS_SVG.png" x="-16" y="-32" width="32" height="32" class="pin"/> -->
+  <!-- labelka miasta -->
+  <text class="label" x="-43" y="17" style="fill-opacity:1;">Bytom</text>
+  <!-- grupa tooltipów, domyślnie ukryta -->
+  <g class="tooltip-group" transform="translate(0,0)">
+  
+
+    <!-- BOX 13 – inny link -->
+    <a xlink:href="https://pl.wikipedia.org/wiki/Bytom" target="Artykuly_z_MS">
+      <g class="tooltip" transform="translate(-47,23)">
+        <rect x="0" y="0" width="165" height="60" rx="8" ry="8"
+              fill="white" stroke="#4a276a" stroke-width="1"/>
+        <image href="MS_fotki/brak_foty.jpg" x="5" y="5" width="72" height="50"/>
+        <text class="tooltip-text" x="82" y="13"></text>
+        <text class="tooltip-text" x="82" y="23"></text>
+        <text class="tooltip-text" x="82" y="33">BYTOM</text>
+        <text class="tooltip-text" x="82" y="43"></text>
+        <text class="tooltip-text" x="82" y="53"></text>
+      </g>
+    </a>
+  </g>
+</g>
+
+    <!-- CITY 10 – Opole -->
+
+<g class="city" transform="translate(225,390)">
+  <!-- pin -->
+  <circle class="pin" cx="0" cy="0" r="3" fill="#9222d3"/>
+  <image href="Szpilka_MS_SVG.png" x="-12" y="-24" width="24" height="24" class="pin"/>
+<!--  <image href="Szpilka_MS_SVG.png" x="-16" y="-32" width="32" height="32" class="pin"/> -->
+  <!-- labelka miasta -->
+  <text class="label" x="-38" y="17" style="fill-opacity:1;">Opole</text>
+  <!-- grupa tooltipów, domyślnie ukryta -->
+  <g class="tooltip-group" transform="translate(0,0)">
+
+    <!-- BOX 14 – inny link -->
+    <a xlink:href="https://www.dwutygodnik.com/artykul/12027-witamy-w-stolicy-polskiej-piosenki.html" target="Artykuly_z_MS">
+      <g class="tooltip" transform="translate(-38,23)">
+        <rect x="0" y="0" width="165" height="60" rx="8" ry="8"
+              fill="white" stroke="#4a276a" stroke-width="1"/>
+        <image href="MS_fotki/opole.jpg" x="5" y="5" width="72" height="50"/>
+        <text class="tooltip-text" x="82" y="13"></text>
+        <text class="tooltip-text" x="82" y="18">WITAMY</text>
+        <text class="tooltip-text" x="82" y="28">W STOLICY</text>
+        <text class="tooltip-text" x="82" y="38">POLSKIEJ </text>
+        <text class="tooltip-text" x="82" y="48">PIOSENKI</text>
+      </g>
+    </a>
+  </g>
+</g>
+
+</svg>
