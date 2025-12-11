@@ -67,6 +67,8 @@ svg, svg * {
     }
 
     /* pojawiają się po hover na pinezce lub nazwie miasta */
+    /* pojawiają się po hover na pinezce lub nazwie miasta */
+    .city:hover .tooltip,
     .city:active .tooltip {
       visibility: visible;
       opacity: 1;
