@@ -58,15 +58,26 @@ svg, svg * {
         transform-origin: 0px 0px;
       }
 
+      /* Feedback przy kliknięciu / stanie otwartym */
+      .city:active .pin,
+      .city.open .pin {
+        transform: scale(1.05);
+        transform-origin: 0px 0px;
+      }
+
+
+
     /* ---- DYMKI ---- */
     /* domyślnie ukryte */
     .tooltip { 
       visibility: hidden;
       opacity: 0;
-      transition: opacity 0.2s ease-in-out;
+<!--       transition: opacity 0.2s ease-in-out; -->
+      transition: opacity 0.05s linear; /* bardzo szybkie pojawianie/znikanie */
     }
 
     /* pojawiają się po hover na pinezce lub nazwie miasta */
+     .city:hover .tooltip,
      .city:active .tooltip,
      .city.open .tooltip {
       visibility: visible;
@@ -83,7 +94,6 @@ svg, svg * {
 
 
 
-<style>
   :root {
     --corner: 8;
   }
@@ -94,7 +104,6 @@ svg, svg * {
     stroke: #4a276a;
     stroke-width: 1;
   }
-</style>
 
 
 
