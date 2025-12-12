@@ -26,9 +26,9 @@ svg, svg * {
   -webkit-touch-callout: none; /* blokuje systemowe menu */
 }
 
-.city .pin {
-  pointer-events: none;
-}
+  .city .pin {
+  pointer-events: auto;
+  }
 
       a text { cursor: pointer; }
 
@@ -67,9 +67,8 @@ svg, svg * {
     }
 
     /* pojawiają się po hover na pinezce lub nazwie miasta */
-    /* pojawiają się po hover na pinezce lub nazwie miasta */
-    .city:hover .tooltip,
-    .city:active .tooltip {
+     .city:hover .tooltip,
+     .city:active .tooltip {
       visibility: visible;
       opacity: 1;
     }
