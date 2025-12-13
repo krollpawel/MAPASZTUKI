@@ -333,7 +333,7 @@ Autorzy:
   <g class="tooltip-group" transform="translate(0,0)">
 
     <!-- BOX 8 – inny link -->
-    <a xlink:href="https://www.dwutygodnik.com/artykul/12220-mapa-sztuki-2-krosno.html" target="Artykuly_z_MS">
+    <a xlink:href="https://www.dwutygodnik.com/artykul/12224-trzeba-umiec-opowiadac.html" target="Artykuly_z_MS">
       <g class="tooltip" transform="translate(-87,22)">
 
 <rect
@@ -347,10 +347,10 @@ Autorzy:
 <!--         <rect x="0" y="0" width="165" height="60" rx="8" ry="8"
               fill="white" stroke="#4a276a" stroke-width="1"/> -->
 
-        <image href="MS_fotki/krosno1_(podcast).jpg" x="5" y="5" width="72" height="50"/>
+        <image href="MS_fotki/krosno.jpg" x="5" y="5" width="72" height="50"/>
 <!--         <image href="MS_fotki/Znaczek_Spotify.png" x="60" y="38" width="14" height="14"/> -->
-        <text class="tooltip-text" x="5" y="65">MAPA SZTUKI (2):</text>
-        <text class="tooltip-text" x="5" y="75">KROSNO</text>
+        <text class="tooltip-text" x="5" y="65">TRZEBA UMIEĆ</text>
+        <text class="tooltip-text" x="5" y="75">OPOWIADAĆ</text>
         <text class="tooltip-text" x="5" y="85"></text>
         <text class="tooltip-text" x="5" y="95"></text>
 
