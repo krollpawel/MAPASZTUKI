@@ -35,7 +35,7 @@ svg, svg * {
       /* Ozdobna czcionka dla etykiet */
       .label {
         font-family: "LeagueGothic", sans-serif;
-        fill: #444444;
+        fill: #443d0e;
         font-size: 24px;
       }
 
