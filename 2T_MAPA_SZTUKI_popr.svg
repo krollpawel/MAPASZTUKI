@@ -129,7 +129,7 @@ Autorzy:
          x="0" y="0" width="550" height="550"
          image-rendering="crispEdges" />
 
-  <!-- Kredyty w mapie
+  <!-- Kredyty w mapie 
          <text x="472" y="530" font-size="7" fill="#555" font-family="sans-serif" opacity="0.8">Mapa: Ola Szczepaniak</text>
          <text x="395" y="538" font-size="7" fill="#555" font-family="sans-serif" opacity="0.8">Interaktywność i kodowanie: Ad@m Szym@ński</text> -->
 
